@@ -48,7 +48,7 @@ const IndexPage = ({ data }) => {
               )
             } else {
               return (
-                <div key={post.id}>
+                <div key={post.id} className="border-t border-t-gray-500 pt-9">
                   <BasicCard data={post} />
                 </div>
               )
@@ -68,7 +68,7 @@ const IndexPage = ({ data }) => {
                 return (
                   <div
                     key={post.id}
-                    className="col-span-1 p-6 border border-gray-300 transition ease-in-out duration-500 hover:border-b hover:border-l hover:border-l-gray-900 hover:border-b-gray-900"
+                    className="col-span-1 p-6 border border-gray-300 rounded-lg transition ease-in-out duration-500 hover:border-gray-700"
                   >
                     <Card data={post} />
                   </div>
@@ -77,7 +77,7 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
           {/* 文章分類 */}
-          <div className="text-center lg:text-left divide-y divide-gray-900">
+          <div className="text-center lg:text-left divide-y divide-gray-500">
             <Text as="h2" text="文章分類" className="lg:text-2xl mb-4" />
             <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-1 pt-12">
               {topics.map(topic => {
@@ -85,18 +85,18 @@ const IndexPage = ({ data }) => {
                   <Link
                     to={`/${topic.slug}`}
                     key={topic.id}
-                    className="relative"
+                    className="relative w-full flex justify-center items-center"
                   >
-                    <p className="absolute bg-white text-gray-900 z-10 bottom-0 right-0 font-bold text-xl sm:text-2xl px-6 sm:px-8 py-3 sm:py-4">
+                    <p className="absolute text-white z-10 font-bold text-xl sm:text-2xl">
                       {topic.name}
                     </p>
                     <div className="relative">
                       <GatsbyImage
                         alt={topic.name}
                         image={topic.image.gatsbyImageData}
-                        className="h-24 sm:h-32 w-full"
+                        className="h-24 sm:h-32 w-full rounded-lg"
                       />
-                      <div className="absolute inset-0 bg-gray-900 opacity-25 hover:opacity-50 transition ease-in-out duration-300" />
+                      <div className="absolute inset-0 bg-gray-900 rounded-lg opacity-25 hover:opacity-50 transition ease-in-out duration-300" />
                     </div>
                   </Link>
                 )
