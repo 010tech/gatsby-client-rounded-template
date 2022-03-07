@@ -12,7 +12,7 @@ export function CTA({
 }) {
   return (
     <div className={`mx-auto w-full py-16 ${className}`}>
-      <div className="space-y-8 border-line">
+      <div className="space-y-8 border-y-2 border-primary-500 py-8 sm:py-12">
         {excerpt && (
           <p className="heading text-center text-2xl sm:text-3xl !leading-loose tracking-wide font-bold">
             {excerpt}

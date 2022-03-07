@@ -2,11 +2,11 @@ import React from "react"
 import PropTypes from "prop-types"
 
 export const ButtonType = {
-  solid: "transition ease-in-out duration-150",
+  solid: "transition ease-in-out duration-150 rounded",
   outline:
-    "text-gray-900 border border-gray-900 bg-white hover:bg-gray-900 hover:text-white active:bg-gray-800 transition ease-in-out duration-150",
+    "text-gray-700 border border-gray-500 bg-white hover:bg-gray-900 hover:text-white active:bg-gray-800 transition ease-in-out duration-150",
   ghost:
-    "text-gray-500 hover:text-gray-900 transition ease-in-out duration-300",
+    "text-gray-500 hover:text-gray-700 transition ease-in-out duration-300",
 }
 
 export const ButtonSize = {
@@ -29,7 +29,7 @@ export function Button({
   return icon ? (
     <button
       type="button"
-      className={`inline-flex space-x-2 justify-center items-center text-gray-900 ${classNames} ${className}`}
+      className={`inline-flex space-x-2 justify-center items-center text-gray-700 ${classNames} ${className}`}
     >
       {children}
       {icon}

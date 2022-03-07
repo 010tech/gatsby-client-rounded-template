@@ -17,16 +17,12 @@
   @apply text-gray-900 tracking-wide font-bold;
 }
 
-.border-line {
-  @apply border-l-2 border-b-2 border-gray-900 pl-6 pb-8 sm:pl-12 sm:pb-12;
-}
-
 .gradient, .link-gradient {
-  @apply underline decoration-4 decoration-primary-300 underline-offset-4;
+  @apply underline decoration-4 decoration-primary-500 underline-offset-4;
 }
 
 .link-gradient:hover {
-  @apply decoration-primary-400
+  @apply decoration-primary-600
 }
 
 .grid-auto {
@@ -65,11 +61,11 @@
 }
 
 .markdown strong {
-  @apply font-bold underline decoration-4 decoration-primary-300 underline-offset-4;
+  @apply font-bold underline decoration-4 decoration-primary-500 underline-offset-4;
 }
 
 .markdown a {
-  @apply font-bold underline;
+  @apply font-bold underline decoration-4 decoration-primary-500 underline-offset-4;
 }
 
 .markdown ol,
@@ -98,7 +94,7 @@
 }
 
 .markdown blockquote p {
-  @apply border-l-4 border-gray-900 leading-loose tracking-wide py-6 pl-6 my-12 mx-0 sm:pl-8 sm:mx-8;
+  @apply border-l-4 border-primary-500 leading-loose tracking-wide py-6 pl-6 my-12 mx-0 sm:pl-8 sm:mx-8;
 }
 
 .markdown p code {
@@ -106,7 +102,7 @@
 }
 
 .markdown pre {
-  @apply bg-gray-100 border-2 border-gray-900 break-words px-6 py-8 sm:px-12 sm:py-12 my-12 text-left sm:text-center;
+  @apply bg-primary-50 rounded-lg break-words px-6 py-8 sm:px-12 sm:py-12 my-12 text-left sm:text-center;
 }
 
 .markdown pre code {
@@ -119,7 +115,7 @@
 }
 
 .markdown tbody {
-  @apply divide-y divide-gray-900;
+  @apply divide-y divide-gray-500;
 }
 
 .markdown table th {
@@ -127,7 +123,7 @@
 }
 
 .markdown tr {
-  @apply divide-x divide-gray-900;
+  @apply divide-x divide-gray-500;
 }
 
 .markdown td {
