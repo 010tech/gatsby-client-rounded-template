@@ -176,7 +176,7 @@ const Post = ({ data }) => {
               alt={post.name}
               image={post.image.gatsbyImageData}
               loading="eager"
-              className="h-full"
+              className="h-full w-full"
               objectFit={"cover"}
             />
           </div>
@@ -391,7 +391,7 @@ export const pageQuery = graphql`
         excerpt
       }
       image {
-        gatsbyImageData(placeholder: BLURRED)
+        gatsbyImageData(placeholder: BLURRED, quality: 100)
         file {
           url
         }
@@ -417,7 +417,12 @@ export const pageQuery = graphql`
             name
           }
           image {
-            gatsbyImageData(width: 768, height: 512, placeholder: BLURRED)
+            gatsbyImageData(
+              width: 768
+              height: 512
+              placeholder: BLURRED
+              quality: 100
+            )
           }
         }
       }

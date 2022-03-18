@@ -13,7 +13,11 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <a href={mainUrl}>
-              <GatsbyImage image={logo.gatsbyImageData} alt="logo" />
+              {logo.gatsbyImageData ? (
+                <GatsbyImage image={logo?.gatsbyImageData} alt="logo" />
+              ) : (
+                <img src={logo.file.url} alt="logo" className="h-6 sm:h-9" />
+              )}
             </a>
           </div>
 
