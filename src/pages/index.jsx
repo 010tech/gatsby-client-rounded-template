@@ -85,7 +85,7 @@ const IndexPage = ({ data }) => {
                   <Link
                     to={`/${topic.slug}`}
                     key={topic.id}
-                    className="relative w-full flex justify-center items-center"
+                    className="relative w-full flex justify-center items-center hover:bg-black/[.5] transition ease-in-out duration-300 rounded-lg"
                   >
                     <p className="absolute text-white z-10 font-bold text-xl sm:text-2xl">
                       {topic.name}
@@ -94,9 +94,9 @@ const IndexPage = ({ data }) => {
                       <GatsbyImage
                         alt={topic.name}
                         image={topic.image.gatsbyImageData}
-                        className="h-24 sm:h-32 w-full rounded-lg"
+                        className="h-24 sm:h-32 w-full rounded-lg -z-10"
                       />
-                      <div className="absolute inset-0 bg-gray-900 rounded-lg opacity-25 hover:opacity-50 transition ease-in-out duration-300" />
+                      <div className="absolute inset-0 bg-gray-900 rounded-lg opacity-25" />
                     </div>
                   </Link>
                 )
