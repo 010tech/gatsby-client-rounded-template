@@ -37,7 +37,7 @@ export function Button({
   ) : (
     <button
       type="button"
-      className={`text-white bg-primary-700 hover:bg-primary-500 active:bg-primary-900 ${classNames} ${className}`}
+      className={`text-white bg-primary-700 hover:bg-primary-500 active:bg-primary-800 ${classNames} ${className}`}
     >
       {children}
     </button>
