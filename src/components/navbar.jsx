@@ -24,7 +24,9 @@ export default function Navbar() {
           {/* CTA按鈕 */}
           <div className="flex items-center">
             <Link as="a" to={cta.link}>
-              <Button size="base">{cta.title}</Button>
+              <Button size="base" className="fix_button">
+                {cta.title}
+              </Button>
             </Link>
           </div>
         </div>

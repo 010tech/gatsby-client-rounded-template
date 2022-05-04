@@ -65,7 +65,7 @@
 }
 
 .markdown a {
-  @apply font-bold underline decoration-4 decoration-primary-500 underline-offset-4;
+  @apply font-bold underline;
 }
 
 .markdown ol,
@@ -111,7 +111,7 @@
 }
 
 .markdown table {
-  @apply w-fit my-12 mx-auto leading-7;
+  @apply w-fit mb-12 mx-auto leading-7 border-gray-500 border;
 }
 
 .markdown tbody {
