@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Text } from "../../ui"
-import BasicCard from "../card/Card"
+import BasicCard from "../card/BasicCard"
 
 const LatestPost = ({ latestPosts }) => {
   const latestPost = latestPosts.map(post => {
