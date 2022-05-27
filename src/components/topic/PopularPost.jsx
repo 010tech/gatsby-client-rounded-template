@@ -27,6 +27,7 @@ const PopularPost = ({ popularPosts }) => {
       </div>
     )
   }
+  return null
 }
 
 PopularPost.propTypes = {

@@ -25,6 +25,7 @@ const LatestPost = ({ topic }) => {
       </div>
     )
   }
+  return null
 }
 
 LatestPost.propTypes = {

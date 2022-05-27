@@ -22,6 +22,7 @@ const LatestPost = ({ latestPosts }) => {
       </>
     )
   }
+  return null
 }
 
 LatestPost.propTypes = {
