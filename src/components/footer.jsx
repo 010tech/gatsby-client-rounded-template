@@ -1,7 +1,7 @@
 import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { useSetting } from "../data/use-setting"
-import Link from "./link"
+import PoweredLink from "./PoweredLink"
 
 export default function Footer() {
   const { mainUrl, copyRight, footerImage } = useSetting()
@@ -33,9 +33,12 @@ export default function Footer() {
             </p>
             <p className="text-gray-500">
               Powered by{" "}
-              <Link as="a" to="https://welly.tw">
-                Welly SEO
-              </Link>
+              <PoweredLink
+                isDisplay={
+                  process.env.DISPLAY_WELLY_URL &&
+                  process.env.DISPLAY_WELLY_URL.toLowerCase() === "true"
+                }
+              />
             </p>
           </div>
         </div>
