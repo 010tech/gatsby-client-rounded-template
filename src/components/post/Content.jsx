@@ -17,15 +17,14 @@ const MarkdownContent = ({ content }) => {
 }
 
 const PrimaryContent = ({ content }) => {
-  if (content.displayTitle) {
-    return (
-      <div id={`content-${content.id}`}>
-        <h2 className="mt-12 mb-6">{content.title}</h2>
-        {content?.content && <MarkdownContent content={content} />}
-      </div>
-    )
-  }
-  return null
+  return (
+    <div id={`content-${content.id}`}>
+      <h2 className={`mt-12 mb-6 ${content.displayTitle ? "" : "hidden"}`}>
+        {content.title}
+      </h2>
+      {content?.content && <MarkdownContent content={content} />}
+    </div>
+  )
 }
 
 const SecondaryContent = ({ content }) => {
