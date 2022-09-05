@@ -22,7 +22,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
 
-  // Create post pages
+  // Create Post pages
   const allPosts = result.data.allPosts.nodes
   allPosts.forEach(post => {
     createPage({
@@ -33,7 +33,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       },
     })
   })
-  // Create topic pages
+  // Create Topic pages
   const allTopics = result.data.allTopics.nodes
   allTopics.forEach(topic => {
     createPage({

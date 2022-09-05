@@ -1,9 +1,9 @@
 import React from "react"
 import { GatsbySeo } from "gatsby-plugin-next-seo"
-import { useMetadata } from "../data/use-metadata"
-import { useSetting } from "../data/use-setting"
+import { useMetadata } from "../data/useMetadata"
+import { useSetting } from "../data/useSetting"
 
-export default function SEO() {
+export default function Seo() {
   const { siteUrl, language } = useMetadata()
   const { title, titleTemplate, description, siteName, ogImage } = useSetting()
 

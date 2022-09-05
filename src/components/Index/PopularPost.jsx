@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Card from "../card/Card"
-import BasicCard from "../card/BasicCard"
+import Card from "../Card/Card"
+import BasicCard from "../Card/BasicCard"
 
 const PopularPost = ({ popularPosts }) => {
   return popularPosts.map((post, idx) => {

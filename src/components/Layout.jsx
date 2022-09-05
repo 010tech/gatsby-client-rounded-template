@@ -1,11 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
-import SEO from "./seo"
-import Navbar from "./navbar"
-import Footer from "./footer"
-import Link from "./link"
-import { Button } from "./button"
-import { useSetting } from "../data/use-setting"
+import Seo from "./Seo"
+import Navbar from "./Navbar"
+import Footer from "./Footer"
+import Link from "./Link"
+import { Button } from "./Button"
+import { useSetting } from "../data/useSetting"
 
 const Layout = ({ children }) => {
   const { cta } = useSetting()
@@ -13,13 +13,16 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <SEO />
+      <Seo />
       <div className="flex flex-col h-screen">
         <Navbar />
         <main className="mt-16 grow">{children}</main>
         <div className="fixed bottom-6 right-6 sm:hidden">
           <Link as="a" to={link}>
-            <Button size="base" className="fix_button">
+            <Button
+              size="base"
+              className={`convert ${cta?.gtmClickClasses || ""}`}
+            >
               {title}
             </Button>
           </Link>

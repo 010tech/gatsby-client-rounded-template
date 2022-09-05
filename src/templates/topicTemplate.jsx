@@ -2,12 +2,12 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import { GatsbySeo } from "gatsby-plugin-next-seo"
-import { useMetadata } from "../data/use-metadata"
-import Breadcrumb from "../components/breadcrumb"
-import Layout from "../components/layout"
-import Landing from "../components/topic/Landing"
-import PopularPost from "../components/topic/PopularPost"
-import LatestPost from "../components/topic/LatestPost"
+import { useMetadata } from "../data/useMetadata"
+import Breadcrumb from "../components/Breadcrumb"
+import Layout from "../components/Layout"
+import Landing from "../components/Topic/Landing"
+import PopularPost from "../components/Topic/PopularPost"
+import LatestPost from "../components/Topic/LatestPost"
 
 const TopicPage = ({ data }) => {
   const { contentfulTopic: topic } = data

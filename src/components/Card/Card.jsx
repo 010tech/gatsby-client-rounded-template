@@ -1,7 +1,7 @@
 import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 import PropTypes from "prop-types"
-import Link from "../link"
+import Link from "../Link"
 import ContinueReading from "./ContinueReading"
 import CategoryAndUpdateTime from "./CategoryAndUpdateTime"
 

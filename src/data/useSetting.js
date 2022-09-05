@@ -15,6 +15,7 @@ export const useSetting = () => {
           cta {
             title
             link
+            gtmClickClasses
           }
           ogImage {
             file {

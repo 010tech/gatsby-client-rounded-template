@@ -2,8 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { BreadcrumbJsonLd } from "gatsby-plugin-next-seo"
 import { ChevronRightIcon } from "@heroicons/react/outline"
-import { useSetting } from "../data/use-setting"
-import Link from "./link"
+import { useSetting } from "../data/useSetting"
+import Link from "./Link"
 
 const CrumbItem = ({ url, name, lastItem }) => (
   <li>
