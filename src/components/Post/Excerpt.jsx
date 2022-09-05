@@ -1,4 +1,4 @@
-import Link from "../link"
+import Link from "../Link"
 import React from "react"
 import PropTypes from "prop-types"
 

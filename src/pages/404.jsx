@@ -1,7 +1,7 @@
 import React from "react"
-import { Button } from "../components/button"
-import Layout from "../components/layout"
-import Link from "../components/link"
+import { Button } from "../components/Button"
+import Layout from "../components/Layout"
+import Link from "../components/Link"
 
 const NotFoundPage = () => (
   <Layout>

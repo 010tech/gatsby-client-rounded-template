@@ -1,9 +1,9 @@
 import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
-import { Button } from "./button"
-import Link from "./link"
+import { Button } from "./Button"
+import Link from "./Link"
 import PropTypes from "prop-types"
-import { useSetting } from "../data/use-setting"
+import { useSetting } from "../data/useSetting"
 
 const Navbar = () => {
   const { mainUrl, cta, logo } = useSetting()
@@ -30,7 +30,10 @@ const Navbar = () => {
           {/* CTA按鈕 */}
           <div className="hidden sm:flex sm:items-center">
             <Link as="a" to={link}>
-              <Button size="base" className="fix_button">
+              <Button
+                size="base"
+                className={`convert ${cta?.gtmClickClasses || ""}`}
+              >
                 {title}
               </Button>
             </Link>

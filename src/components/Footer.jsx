@@ -1,6 +1,6 @@
 import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
-import { useSetting } from "../data/use-setting"
+import { useSetting } from "../data/useSetting"
 import PoweredLink from "./PoweredLink"
 
 export default function Footer() {

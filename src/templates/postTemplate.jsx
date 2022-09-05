@@ -2,18 +2,18 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import { BlogPostJsonLd, GatsbySeo } from "gatsby-plugin-next-seo"
-import Breadcrumb from "../components/breadcrumb"
-import { CTA } from "../components/cta"
-import Layout from "../components/layout"
-import { useMetadata } from "../data/use-metadata"
-import { useSetting } from "../data/use-setting"
-import Excerpt from "../components/post/Excerpt"
-import Menu from "../components/post/Menu"
-import Post from "../components/post"
-import Share from "../components/post/Share"
-import PopularPost from "../components/post/PopularPost"
-import LatestPost from "../components/post/LatestPost"
-import Header from "../components/post/Header"
+import Breadcrumb from "../components/Breadcrumb"
+import { Cta } from "../components/Cta"
+import Layout from "../components/Layout"
+import { useMetadata } from "../data/useMetadata"
+import { useSetting } from "../data/useSetting"
+import Excerpt from "../components/Post/Excerpt"
+import Menu from "../components/Post/Menu"
+import Post from "../components/Post"
+import Share from "../components/Post/Share"
+import PopularPost from "../components/Post/PopularPost"
+import LatestPost from "../components/Post/LatestPost"
+import Header from "../components/Post/Header"
 
 const PostTemplate = ({ data }) => {
   const {
@@ -131,12 +131,8 @@ const PostTemplate = ({ data }) => {
         {/* PostTemplate Content */}
         <Post post={post} />
 
-        {/* PostTemplate CTA */}
-        <CTA
-          destination={post.cta.link}
-          excerpt={post.cta.excerpt}
-          title={post.cta.title}
-        />
+        {/* PostTemplate Cta */}
+        <Cta data={post.cta} />
 
         {/* PostTemplate Share */}
         <Share post={post} canonical={canonical} />
@@ -183,6 +179,7 @@ export const pageQuery = graphql`
         title
         link
         excerpt
+        gtmClickClasses
       }
       excerpt {
         excerpt
