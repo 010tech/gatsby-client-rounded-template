@@ -90,7 +90,7 @@
 }
 
 .markdown img {
-  @apply my-12;
+  @apply my-12 mx-auto;
 }
 
 .markdown blockquote p {
