@@ -74,14 +74,14 @@ export default IndexPage
 
 export const pageQuery = graphql`
   {
-    posts: allContentfulPost(sort: { fields: updatedAt, order: DESC }) {
+    posts: allContentfulPost(sort: { updatedAt: DESC }) {
       nodes {
         ...PostData
       }
     }
     popularPosts: allContentfulPost(
       filter: { isPopularPost: { eq: true } }
-      sort: { fields: updatedAt, order: DESC }
+      sort: { updatedAt: DESC }
       limit: 4
     ) {
       nodes {

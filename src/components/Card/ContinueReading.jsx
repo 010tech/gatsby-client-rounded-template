@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Link from "../Link"
 import { Button } from "../Button"
-import { ArrowRightIcon } from "@heroicons/react/outline"
+import { ArrowRightIcon } from "@heroicons/react/20/solid"
 
 const ContinueReading = ({ topicSlug, slug }) => {
   return (

@@ -238,10 +238,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    latestPosts: allContentfulPost(
-      sort: { fields: updatedAt, order: DESC }
-      limit: 6
-    ) {
+    latestPosts: allContentfulPost(sort: { updatedAt: DESC }, limit: 6) {
       nodes {
         id
         slug

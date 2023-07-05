@@ -109,7 +109,7 @@ export const pageQuery = graphql`
 
     popularPosts: allContentfulPost(
       filter: { topic: { slug: { eq: $slug } }, isPopularPost: { eq: true } }
-      sort: { order: DESC, fields: updatedAt }
+      sort: { updatedAt: DESC }
       limit: 3
     ) {
       nodes {
