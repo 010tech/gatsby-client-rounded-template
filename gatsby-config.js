@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: process.env.SITE_URL,
     language: `zh-tw`,
   },
+  trailingSlash: "never",
   plugins: [
     `gatsby-plugin-next-seo`,
     {

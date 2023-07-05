@@ -4,7 +4,7 @@ export const useTopics = () => {
   return useStaticQuery(
     graphql`
       query AllTopic {
-        topics: allContentfulTopic(sort: { order: ASC, fields: order }) {
+        topics: allContentfulTopic(sort: { order: ASC }) {
           nodes {
             id
             slug

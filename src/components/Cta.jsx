@@ -27,5 +27,5 @@ export function Cta({ data }) {
 }
 
 Cta.propTypes = {
-  data: PropTypes.string,
+  data: PropTypes.object,
 }
