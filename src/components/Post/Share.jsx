@@ -11,7 +11,8 @@ import {
 
 const Share = ({ name, canonical }) => {
   return (
-    <div className="flex justify-center gap-2">
+    <div className="flex justify-center items-center gap-2">
+      <p className="text-gray-900 text-lg leading-loose">分享至：</p>
       <FacebookShareButton url={canonical} quote={name}>
         <FacebookIcon size={32} borderRadius={100} />
       </FacebookShareButton>
