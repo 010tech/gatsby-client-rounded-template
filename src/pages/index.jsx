@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => {
   } = useTopics()
 
   const { siteUrl } = useMetadata()
-  const { title, description } = useSetting()
+  const { h1, title, description } = useSetting()
   const canonical = siteUrl
 
   return (
@@ -38,6 +38,9 @@ const IndexPage = ({ data }) => {
       />
       <div className="wrapper my-6 sm:my-16">
         {/* 熱門文章 */}
+        <h1 className="text-gray-700 font-bold mb-12 text-3xl sm:text-5xl sm:mb-16">
+          {h1}
+        </h1>
         <div className="grid gap-16 sm:grid-cols-2 lg:grid-cols-3">
           <PopularPost popularPosts={popularPosts} />
         </div>

@@ -14,9 +14,7 @@ const NotFoundPage = () => (
       </p>
       <div className="mt-12">
         <Link to="/">
-          <Button type="outline" size="md">
-            回首頁
-          </Button>
+          <Button size="md">回首頁</Button>
         </Link>
       </div>
     </div>

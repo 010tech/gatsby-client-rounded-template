@@ -33,7 +33,9 @@ const PostTemplate = ({ data }) => {
     logo: {
       file: { url },
     },
+    showShareButtons,
   } = useSetting()
+
   const canonical = `${siteUrl}/${post.topic.slug}/${post.slug}`
   const crumbs = [
     {
@@ -135,7 +137,7 @@ const PostTemplate = ({ data }) => {
         <Cta data={post.cta} />
 
         {/* PostTemplate Share */}
-        <Share post={post} canonical={canonical} />
+        {showShareButtons ? <Share post={post} canonical={canonical} /> : null}
       </div>
 
       <div className="wrapper my-24 space-y-24 sm:my-36 sm:space-y-36">

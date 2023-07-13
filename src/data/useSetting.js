@@ -7,6 +7,7 @@ export const useSetting = () => {
         contentfulSetting {
           mainUrl
           siteName
+          h1
           title
           titleTemplate
           description
@@ -34,6 +35,7 @@ export const useSetting = () => {
             }
             gatsbyImageData(quality: 100, placeholder: BLURRED, height: 128)
           }
+          showShareButtons
           # 後台有預留facebookAppId欄位
         }
       }
