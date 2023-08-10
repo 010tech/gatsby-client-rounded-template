@@ -13,7 +13,6 @@ const Header = ({ post }) => {
     image: { gatsbyImageData: image },
     name,
     updatedAt,
-    createdAt,
   } = post
 
   return (
@@ -44,13 +43,6 @@ const Header = ({ post }) => {
           <div className="text-gray-500">
             <div className="flex space-x-2 items-baseline">
               <p className="font-bold text-sm">{updatedAt}更新</p>
-              <p
-                className={`text-xs ${
-                  updatedAt === createdAt ? "hidden" : "block"
-                }`}
-              >
-                {createdAt}發佈
-              </p>
             </div>
           </div>
         </div>
