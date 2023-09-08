@@ -5,6 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 const Header = ({ post }) => {
   const {
     author: {
+      name: authorName,
       image: {
         gatsbyImageData,
         file: { url },
@@ -38,7 +39,7 @@ const Header = ({ post }) => {
         </div>
         <div>
           <p className="text-gray-700 font-bold leading-loose tracking-wide">
-            {name}
+            {authorName}
           </p>
           <div className="text-gray-500">
             <div className="flex space-x-2 items-baseline">
